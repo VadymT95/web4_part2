@@ -1,0 +1,113 @@
+.wrapper{
+    margin: 1px;
+    height: 100%;
+    min-height: 600px;
+}
+.wrapper{
+    display: grid;
+    background-color: black;
+    border: 1px solid black;
+    grid-gap: 0px;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+/*===================================================*/
+.firstP{
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: rgb(198, 217, 241);
+}
+.firstP>h5{
+    width: 20%;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: right;
+    margin: 5px;
+}
+.firstP>div{
+    width: 80%;
+    text-align: right;
+}
+.secondP{
+    grid-column: 1;
+    grid-row: 2/5;
+    background-color: lightgreen;
+}
+.secondP > h5{
+    text-align: right;
+    margin: 5px;
+}
+.sixthP{
+    grid-column: 2/4;
+    grid-row: 4;
+    background-color: rgb(198, 217, 241);
+}
+.sixthP>header{
+    text-align: right;
+    width: 20%;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px;
+    padding-right: 10px;
+
+
+}
+.sixthP>footer{
+    width: 90%;
+    text-align: right;
+    margin: 10px;
+}
+/*---------------------nested divs:---------------------*/
+.thirdP{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: lightgreen;
+    justify-content: right;
+}
+.fourthP{
+    grid-column: 2;
+    grid-row: 2/4;
+    background-color: rgb(255, 255, 255);
+}
+.fifthP{
+    grid-column: 3;
+    grid-row: 3;
+    background-color: rgb(253, 233, 217);
+}
+/*------------------------------------------------------*/
+
+.firstP, .secondP, .thirdP, .sixthP{/*, .fourth*, .fifthP*/
+    display: flex;
+    align-items: center;
+}
+
+.fifthP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifthP>form>input{
+    margin: 5px;
+}
+
+.firstP>div, .secondP>div, .thirdP>div, .fourthP>div, .fifthP>div, .sixthP>div{
+    margin: 5px;
+}
+
+a{
+    font-size: 18px;
+}
+div{
+    font-size: 18px;
+}
+img{
+    width: 30%;
+}
+
+button{
+    margin: 5px;
+}

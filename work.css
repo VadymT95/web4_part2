@@ -1,0 +1,34 @@
+.work{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.anim{
+    position: absolute;
+    bottom:0%;
+    width: calc(80% - 10px);
+    height: calc(80% - 50px);
+    background-color: gray;
+    border: 5px solid blue;
+
+}
+.controls{
+    position: relative;
+    width: 100%;
+    height: calc(20% + 50px);
+    background-color: lightgreen;
+}
+#end_button_id{
+    margin-left: 95%;
+}
+
+#start_button_id{
+    margin-left: 95%;
+}
+#final_button_id{
+    margin-left: 95%;
+}

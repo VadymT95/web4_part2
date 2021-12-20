@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="work.css">
+
+    <meta charset="utf-8">
+    <title>Main page</title>
+    <script src="scripts.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+    <style>
+        .work{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            margin-top: 5%;
+            margin-left: 10%;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        .anim{
+            position: absolute;
+            bottom:0%;
+            width: calc(80% - 10px);
+            height: calc(80% - 50px);
+            background-color: gray;
+            border: 5px solid blue;
+            background-image: url("web4_background.png");
+        }
+        .controls{
+            position: absolute;
+            top:0%;
+            width: 100%;
+            height: calc(20% + 50px);
+            background-color: lightgreen;
+        }
+        #end_button_id{
+            margin-left: 95%;
+        }
+
+        #start_button_id{
+            margin-left: 95%;
+        }
+        #final_button_id{
+            margin-left: 95%;
+        }
+        #canvas{
+            width: 100%;
+            height: 100%;
+        }
+        .controls > h5{
+            margin-left: 5%;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            text-align: left;
+            float: left;
+            width: 33%;
+        }
+        .button_control_part{
+            margin-right: 5%;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            text-align: left;
+            float: right;
+            width: 33%;
+        }
+        #close_button_id{
+            margin-left: 95%;
+            margin-bottom: 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div id="ifrDiv">
+    <div class='work' hidden="true">
+        <div class='controls'>
+            <div class="button_control_part"><button id="end_button_id" onclick="start_button();" >start</button>
+                <button id="close_button_id" onclick="close_button();" >close</button></div>
+            <h5>start of animation</h5>
+        </div>
+        <div class='anim'>
+            <canvas id="canvas" style="border: 2px solid"></canvas>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="firstP">
+        <h5>Don`t waste the time!</h5>
+        <div>By the step leading up into the sleeping-car stood a young French lieutenant, resplendent in uniform conversing, with a small man muffled up to the ears of whom nothing was visible but a pink-tipped nose and the two points of an upward-curled moustache.</div>
+    </div>
+    <div class="secondP">
+        <h5>It was freezingly cold, and this job of seeing off a distinguished stranger was not one to be envied, but Lieutenant Dubosc performed his part manfully.</h5>
+    </div>
+    <div class="thirdP">
+        <div>And then there had come this Belgian stranger – all the way from England, it seemed.</div>
+    </div>
+    <div class="fourthP">
+        <input type="button" id="hider" value="press to show" />
+        <div>Lab 4. Animation.</div>
+    </div>
+    <div class="fifthP">
+        <div>A very distinguished officer had committed suicide, another had suddenly resigned, anxious faces had suddenly lost their anxiety, certain military precautions were relaxed.</div>
+    </div>
+    <div class="sixthP">
+        <header>That happens?</header>
+        <footer>“There are few people travelling this time of year,” he said, glancing up at the windows of the sleeping-car above them.</footer>
+    </div>
+</div>
+<!----><!----><!----><!----><!----><!---->
+<script type="text/javascript" src="dynamic.js"></script>
+<script src="buttons.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+
+
+<script>
+    document.getElementById('hider').onclick = function() {
+        document.getElementsByClassName('work')[0].hidden = false;
+    }
+</script>
+
+</body>
+</html>
